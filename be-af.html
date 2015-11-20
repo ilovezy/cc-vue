@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+
+        <p>
+            <span>:before</span> This is the main content.
+            <span>:after</span>
+        </p>
+
+        <style>
+        .with {
+            background: orange;
+        }
+        
+        .with:before {
+            content: ":before";
+            background: red;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 1rem;
+            text-align: center;
+            border-radius: 50%;
+            display: block;
+            color: white;
+        }
+        
+        .with:after {
+            content: ":after";
+            background: green;
+            font-size: 2rem;
+        }
+        </style>
+        <p class="with">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel dolorum, culpa autem error, ducimus illum, velit repudiandae exercitationem pariatur fugiat optio nam in omnis, numquam asperiores deleniti rerum? Commodi vitae iure aliquid qui architecto dolorem quis repellat eveniet harum, unde beatae obcaecati quo, voluptate incidunt esse! Itaque accusamus sit quod quia laudantium excepturi quibusdam ad eveniet quaerat. Consequuntur enim ullam odit sequi facilis facere quas at molestias, dolores maxime cumque id modi, corporis suscipit eveniet quia voluptates. Doloremque et quam minima, voluptatum laborum, voluptatibus minus voluptate recusandae similique voluptates facere consequuntur reprehenderit! Facilis repudiandae optio enim, fugiat odit ipsam facere!
+        </p>
+
+
+    </div>
+
+</body>
+
+</html>

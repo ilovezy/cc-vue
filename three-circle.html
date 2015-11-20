@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <style>
+        .three-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: red;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .three-circle:before,
+        .three-circle:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: green;
+            display: inline-block;
+            position: absolute;
+        }
+        
+        .three-circle:before {
+            top: 100px;
+        }
+        
+        .three-circle:after {
+            bottom: 100px;
+        }
+        </style>
+
+        <div class="three-circle">
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

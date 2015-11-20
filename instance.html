@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript">
+    function downloadJsAtOnload() {
+        var elem = document.createElement('script');
+        elem.src = 'defer.js';
+        document.body.appendChild(elem);
+    }
+
+    if (window.addEventListener) {
+        window.addEventListener('load', downloadJsAtOnload, false);
+    } else if (window.attachEvent) {
+        window.attachEvent('onload', downloadJsAtOnload);
+    } else {
+        window.onload = downloadJsAtOnload;
+    }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>instance 实例</h1>
+        <p class="alert alert-success">
+            {{ msg }}
+        </p>
+        <p class="alert alert-success">
+            {{* msg}}
+        </p>
+        <p class="alert alert-success">
+            {{{ msg }}}
+        </p>
+
+        <p class="alert alert-{{msg}}">
+            {{{ msg }}}
+        </p>
+
+        <input type="text" v-model="msg">
+    </div>
+
+    <script type="text/javascript" src="bower_components/vue/dist/vue.min.js"></script>
+    <script>
+    var vm = new Vue({
+        el: '.container',
+        data: {
+            msg: 'hello'
+        }
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>component</h1>
+        <example></example>
+    </div>
+
+    <script src="bower_components/vue/dist/vue.min.js"></script>
+    <script>
+    var Example = Vue.extend({
+        template: '<div>{{ message }}</div>',
+        data: function() {
+            return {
+                message: 'Hello Vues.js!'
+            };
+        }
+    });
+
+    // 将组件注册为 <example> 标签
+    Vue.component('example', Example);
+    </script>
+</body>
+
+</html>
